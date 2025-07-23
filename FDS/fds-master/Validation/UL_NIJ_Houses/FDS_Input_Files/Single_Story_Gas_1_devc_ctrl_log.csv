@@ -1,0 +1,10 @@
+Time (s),Type,ID,State,Value,Units
+ 3.00010E+02,DEVC,FRONT DOOR TIMER                                            ,F, 3.00010E+02,s
+ 6.00000E+02,DEVC,BR1 WINDOW TIMER                                            ,F, 6.00000E+02,s
+ 1.20001E+03,DEVC,LR  WINDOW TIMER                                            ,F, 1.20001E+03,s
+ 1.22003E+03,DEVC,BR1 WIND 2 TIMER                                            ,F, 1.22003E+03,s
+ 1.23001E+03,DEVC,BR2 WINDOW TIMER                                            ,F, 1.23001E+03,s
+ 1.25003E+03,DEVC,BR3 WINDOW TIMER                                            ,F, 1.25003E+03,s
+ 1.26003E+03,DEVC,KIT WINDOW TIMER                                            ,F, 1.26003E+03,s
+ 1.27505E+03,DEVC,DR  WINDOW TIMER                                            ,F, 1.27505E+03,s
+ 1.32004E+03,DEVC,KITCH DOOR TIMER                                            ,F, 1.32004E+03,s

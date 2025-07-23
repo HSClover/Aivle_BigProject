@@ -1,0 +1,1123 @@
+
+ Fire Dynamics Simulator
+
+ Current Date     : July 15, 2025  09:38:49
+ Revision         : FDS-6.10.1-0-g12efa16-release
+ Revision Date    : Wed Apr 2 17:38:58 2025 -0400
+ Compiler         : Intel(R) Fortran Compiler for applications running on Intel(R) 64, Version 2025.1.0 Build 20250317
+ Compilation Date : Fri-04/04/2025-08:57-AM
+
+ Number of MPI Processes:  1
+ Number of OpenMP Threads: 4
+
+ MPI version: 3.1
+ MPI library version: Intel(R) MPI Library 2021.6 for Windows* OS
+
+ Hypre library version: v2.32.0
+ Sundials library version: v6.7.0
+
+ Job TITLE        : sample
+ Job ID string    : sample
+
+
+ Grid Dimensions, Mesh     1
+
+   Cells in the X Direction            30
+   Cells in the Y Direction            40
+   Cells in the Z Direction            30
+   Number of Grid Cells             36000
+
+
+ Physical Dimensions, Mesh     1
+
+   Length (m)                       3.000
+   Width  (m)                       4.000
+   Height (m)                       3.000
+
+ Miscellaneous Parameters
+
+   Total Number of Grid Cells       36000
+   Maximum Cell Aspect Ratio        1.000
+   Initial Time Step (s)            0.092
+   CFL Velocity Norm                    2
+   Simulation Start Time (s)          0.0
+   Simulation End Time (s)           60.0
+   Background Pressure (Pa)     101325.00
+   Ambient Temperature (C)          20.00
+
+   3D Cartesian
+   VLES Calculation
+   Eddy Viscosity Model:  Deardorff (C_DEARDORFF = 0.10)
+   Surface INERT Eddy Viscosity Model:  WALE (C_WALE = 0.60)
+   Surface fire1 Eddy Viscosity Model:  WALE (C_WALE = 0.60)
+   Turbulent Prandtl Number:         0.50
+   Turbulent Schmidt Number:         0.50
+
+
+ Pressure solver information
+
+   Solver:                            FFT
+   Velocity tolerance (m/s):    5.000E-02
+   Press eqn res tol (1/s^2):   2.000E+03
+   Max pressure iterations:            10
+
+
+ Background Stratification
+
+      Z (m)     P_0 (Pa)    TMP_0 (C)
+   ------------------------------------
+        2.95    101290.42     20.00
+        2.85    101291.59     20.00
+        2.75    101292.77     20.00
+        2.65    101293.93     20.00
+        2.55    101295.11     20.00
+        2.45    101296.28     20.00
+        2.35    101297.45     20.00
+        2.25    101298.62     20.00
+        2.15    101299.80     20.00
+        2.05    101300.96     20.00
+        1.95    101302.14     20.00
+        1.85    101303.31     20.00
+        1.75    101304.48     20.00
+        1.65    101305.65     20.00
+        1.55    101306.83     20.00
+        1.45    101308.00     20.00
+        1.35    101309.17     20.00
+        1.25    101310.34     20.00
+        1.15    101311.51     20.00
+        1.05    101312.69     20.00
+        0.95    101313.86     20.00
+        0.85    101315.03     20.00
+        0.75    101316.20     20.00
+        0.65    101317.38     20.00
+        0.55    101318.54     20.00
+        0.45    101319.72     20.00
+        0.35    101320.89     20.00
+        0.25    101322.06     20.00
+        0.15    101323.23     20.00
+        0.05    101324.41     20.00
+
+
+ Mass Fraction Transformation Matrix to Convert Species Mixtures (Columns) to Primitive Species (Rows)
+
+                         AIR       PROPANE   PRODUCTS
+   NITROGEN              0.762470  0.000000  0.716833
+   OXYGEN                0.230997  0.000000  0.000000
+   CARBON DIOXIDE        0.000591  0.000000  0.179768
+   WATER VAPOR           0.005941  0.000000  0.103399
+   CARBON MONOXIDE       0.000000  0.000000  0.000000
+   SOOT                  0.000000  0.000000  0.000000
+   HYDROGEN              0.000000  0.000000  0.000000
+   HYDROGEN CYANIDE      0.000000  0.000000  0.000000
+   PROPANE               0.000000  1.000000  0.000000
+
+
+ Primitive Species Information
+
+   NITROGEN
+   Gas Species
+   Molecular Weight (g/mol)                28.01340
+   Ambient Density (kg/m^3)                1.165
+           Enthalpy of Formation (J/kg)  0.000E+00
+
+   OXYGEN
+   Gas Species
+   Molecular Weight (g/mol)                31.99880
+   Ambient Density (kg/m^3)                1.330
+           Enthalpy of Formation (J/kg)  0.000E+00
+
+   CARBON DIOXIDE
+   Gas Species
+   Molecular Weight (g/mol)                44.00950
+   Ambient Density (kg/m^3)                1.830
+           Enthalpy of Formation (J/kg) -8.941E+06
+
+   WATER VAPOR
+   Gas Species
+   Molecular Weight (g/mol)                18.01528
+   Ambient Density (kg/m^3)                0.749
+           Enthalpy of Formation (J/kg) -1.342E+07
+
+   CARBON MONOXIDE
+   Gas Species
+   Molecular Weight (g/mol)                28.01010
+   Ambient Density (kg/m^3)                1.164
+           Enthalpy of Formation (J/kg) -3.946E+06
+
+   SOOT
+   Gas Species
+   Molecular Weight (g/mol)                12.01070
+   Ambient Density (kg/m^3)                0.499
+           Enthalpy of Formation (J/kg)  0.000E+00
+
+   HYDROGEN
+   Gas Species
+   Molecular Weight (g/mol)                 2.01588
+   Ambient Density (kg/m^3)                0.084
+           Enthalpy of Formation (J/kg)  0.000E+00
+
+   HYDROGEN CYANIDE
+   Gas Species
+   Molecular Weight (g/mol)                27.02534
+   Ambient Density (kg/m^3)                1.123
+           Enthalpy of Formation (J/kg)  4.924E+06
+
+   PROPANE
+   Gas Species
+   Molecular Weight (g/mol)                44.09562
+   Ambient Density (kg/m^3)                1.833
+           Enthalpy of Formation (J/kg) -2.374E+06
+
+
+ Tracked (Lumped) Species Information
+
+   AIR
+   Molecular Weight (g/mol)            28.75198
+   Ambient Density (kg/m^3)            1.195
+   Initial Mass Fraction               1.000
+   Enthalpy of Formation (J/kg)     -8.504E+04
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   NITROGEN                       7.624699E-01      7.825727E-01
+   OXYGEN                         2.309974E-01      2.075588E-01
+   CARBON DIOXIDE                 5.914650E-04      3.864118E-04
+   WATER VAPOR                    5.941209E-03      9.482037E-03
+ 
+     Viscosity (kg/m/s) Ambient,  293 K:  1.796E-05
+                                  500 K:  2.612E-05
+                                 1000 K:  4.125E-05
+                                 1500 K:  5.371E-05
+                                 2000 K:  6.476E-05
+   Therm. Cond. (W/m/K) Ambient,  293 K:  2.556E-02
+                                  500 K:  3.814E-02
+                                 1000 K:  6.686E-02
+                                 1500 K:  9.249E-02
+                                 2000 K:  1.153E-01
+        Enthalpy (J/kg) Ambient,  293 K: -9.012E+04
+                                  500 K:  1.222E+05
+                                 1000 K:  6.721E+05
+                                 1500 K:  1.270E+06
+                                 2000 K:  1.896E+06
+    Spec. Heat (J/kg/K) Ambient,  293 K:  1.016E+03
+                                  500 K:  1.042E+03
+                                 1000 K:  1.156E+03
+                                 1500 K:  1.229E+03
+                                 2000 K:  1.270E+03
+   Diff. Coeff. (m^2/s) Ambient,  293 K:  1.991E-05
+                                  500 K:  4.961E-05
+                                 1000 K:  1.580E-04
+                                 1500 K:  3.095E-04
+                                 2000 K:  4.984E-04
+     Gibbs Energy Amb. (kJ/mol),  293 K: -5.873E+01
+                                  500 K: -1.007E+02
+                                 1000 K: -2.117E+02
+                                 1500 K: -3.312E+02
+                                 2000 K: -4.568E+02
+
+   PROPANE
+   Molecular Weight (g/mol)            44.09562
+   Ambient Density (kg/m^3)            1.833
+   Initial Mass Fraction               0.000
+   Enthalpy of Formation (J/kg)     -2.374E+06
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   PROPANE                        1.000000E+00      1.000000E+00
+ 
+     Viscosity (kg/m/s) Ambient,  293 K:  8.079E-06
+                                  500 K:  1.310E-05
+                                 1000 K:  2.234E-05
+                                 1500 K:  2.955E-05
+                                 2000 K:  3.574E-05
+   Therm. Cond. (W/m/K) Ambient,  293 K:  1.821E-02
+                                  500 K:  4.581E-02
+                                 1000 K:  1.212E-01
+                                 1500 K:  1.890E-01
+                                 2000 K:  2.465E-01
+        Enthalpy (J/kg) Ambient,  293 K: -2.382E+06
+                                  500 K: -1.946E+06
+                                 1000 K: -2.769E+05
+                                 1500 K:  1.900E+06
+                                 2000 K:  4.336E+06
+    Spec. Heat (J/kg/K) Ambient,  293 K:  1.646E+03
+                                  500 K:  2.553E+03
+                                 1000 K:  3.960E+03
+                                 1500 K:  4.669E+03
+                                 2000 K:  5.034E+03
+   Diff. Coeff. (m^2/s) Ambient,  293 K:  1.110E-05
+                                  500 K:  2.862E-05
+                                 1000 K:  9.316E-05
+                                 1500 K:  1.833E-04
+                                 2000 K:  2.954E-04
+     Gibbs Energy Amb. (kJ/mol),  293 K: -1.839E+02
+                                  500 K: -2.447E+02
+                                 1000 K: -4.295E+02
+                                 1500 K: -6.584E+02
+                                 2000 K: -9.217E+02
+
+   PRODUCTS
+   Molecular Weight (g/mol)            28.23805
+   Ambient Density (kg/m^3)            1.174
+   Initial Mass Fraction               0.000
+   Enthalpy of Formation (J/kg)     -2.995E+06
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   NITROGEN                       7.168330E-01      7.225815E-01
+   CARBON DIOXIDE                 1.797677E-01      1.153453E-01
+   WATER VAPOR                    1.033993E-01      1.620732E-01
+   CARBON MONOXIDE                0.000000E+00      0.000000E+00
+   SOOT                           0.000000E+00      0.000000E+00
+   HYDROGEN CYANIDE               0.000000E+00      0.000000E+00
+ 
+     Viscosity (kg/m/s) Ambient,  293 K:  1.613E-05
+                                  500 K:  2.391E-05
+                                 1000 K:  3.896E-05
+                                 1500 K:  5.146E-05
+                                 2000 K:  6.248E-05
+   Therm. Cond. (W/m/K) Ambient,  293 K:  2.342E-02
+                                  500 K:  3.618E-02
+                                 1000 K:  6.708E-02
+                                 1500 K:  9.621E-02
+                                 2000 K:  1.223E-01
+        Enthalpy (J/kg) Ambient,  293 K: -3.001E+06
+                                  500 K: -2.770E+06
+                                 1000 K: -2.160E+06
+                                 1500 K: -1.484E+06
+                                 2000 K: -7.662E+05
+    Spec. Heat (J/kg/K) Ambient,  293 K:  1.089E+03
+                                  500 K:  1.141E+03
+                                 1000 K:  1.295E+03
+                                 1500 K:  1.402E+03
+                                 2000 K:  1.464E+03
+   Diff. Coeff. (m^2/s) Ambient,  293 K:  1.950E-05
+                                  500 K:  4.950E-05
+                                 1000 K:  1.599E-04
+                                 1500 K:  3.143E-04
+                                 2000 K:  5.070E-04
+     Gibbs Energy Amb. (kJ/mol),  293 K: -1.530E+02
+                                  500 K: -1.952E+02
+                                 1000 K: -3.077E+02
+                                 1500 K: -4.299E+02
+                                 2000 K: -5.589E+02
+
+
+ Gas Phase Reaction Information
+
+   Solver Details:  
+
+      ODE Solver:  EXPLICIT EULER
+
+      Fuel                                           Heat of Combustion (kJ/kg)
+      PROPANE                                                        46334.6246
+      EPUMO2:                                                        12770.1914
+
+      Primitive Species Stoich. Coeff.
+      Species ID                                                          Molar
+      OXYGEN                                                          -5.000000
+      CARBON DIOXIDE                                                   3.000000
+      WATER VAPOR                                                      4.000000
+      PROPANE                                                         -1.000000
+
+      Tracked (Lumped) Species Stoich. Coeff.
+      Species ID                                             Molar         Mass
+      AIR                                               -24.089557   -15.707286
+      PROPANE                                            -1.000000    -1.000000
+      PRODUCTS                                           26.089557    16.707286
+
+      Reaction Kinetics
+
+      Fast chemistry
+
+      Extinction Model:  EXTINCTION 1
+      Auto-Ignition Temperature (C):            -273.1
+      Critical Flame Temperature (C):           1447.0
+
+      Prescribed Radiative Fraction:             0.290
+
+
+ Material Information
+
+
+ Surface Conditions
+
+   0 INERT (DEFAULT)
+
+   1 fire1
+     HRR Per Unit Area (kW/m2)        250.0
+     PROPANE Mass Flux (kg/s/m2)   5.396E-03
+
+   2 OPEN
+     Passive Vent to Atmosphere
+
+   3 MIRROR
+     Symmetry Plane
+
+   4 INTERPOLATED
+
+   5 PERIODIC
+
+   6 HVAC
+
+   7 MASSLESS TRACER
+
+   8 DROPLET
+
+   9 MASSLESS TARGET
+
+  10 PERIODIC FLOW ONLY
+
+
+ Lagrangian Particle Classes
+
+
+ Cut-off Density and Temperature
+
+    Minimum Temperature:  -259.1 C
+    Maximum Temperature:  2726.8 C
+    Minimum Density:  1.195E-01 kg/m3
+    Maximum Density:  7.677E+01 kg/m3
+
+
+ Device Information
+
+   1 ID: T air 1
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E+00    2.000000E+00    2.800000E+00
+     TEMPORAL STATISTIC: TIME AVERAGE
+
+
+ Slice File Information, Mesh     1
+
+   1 Nodes:   0  30  20  20   0  30, Quantity: TEMPERATURE
+
+
+ Radiation Model Information
+
+   Number of control angles  104
+   Time step increment         3
+   Angle increment             5
+   Theta band N_phi   Solid angle
+     1:        4     0.120
+     2:       12     0.114
+     3:       16     0.127
+     4:       20     0.120
+     5:       20     0.120
+     6:       16     0.127
+     7:       12     0.114
+     8:        4     0.120
+   Using gray gas absorption.
+   Mean beam length  1.000E-01 m
+ 
+ 
+
+ Run Time Diagnostics
+
+       Time Step        1   July 15, 2025  09:38:49
+       Step Size:  0.922E-01 s, Total Time:    0.09218 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.15E-02 on Mesh 1 at (20,20,5)
+       Maximum Pressure Error:  0.25E-05 on Mesh 1 at (17,15,4)
+       ---------------------------------------------------------------
+       Max CFL number:  0.23E-01 at (22,11,21)
+       Max divergence:  0.20E-05 at (20,33,2)
+       Min divergence: -0.14E-02 at (14,26,2)
+       Max VN number :  0.26E-01 at (10,21,4)
+ 
+       Time Step        2   July 15, 2025  09:38:49
+       Step Size:  0.922E-01 s, Total Time:    0.18437 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.21E-01 on Mesh 1 at (30,20,1)
+       Maximum Pressure Error:  0.58E-01 on Mesh 1 at (11,15,2)
+       ---------------------------------------------------------------
+       Max CFL number:  0.23E-01 at (22,11,21)
+       Max divergence:  0.60E+00 at (10,20,4)
+       Min divergence: -0.21E-05 at (19,30,29)
+       Max VN number :  0.23E-01 at (30,22,4)
+ 
+       Time Step        3   July 15, 2025  09:38:49
+       Step Size:  0.922E-01 s, Total Time:    0.27655 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.47E-01 on Mesh 1 at (30,20,1)
+       Maximum Pressure Error:  0.75E+01 on Mesh 1 at (21,25,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.10E+00 at (12,26,2)
+       Max divergence:  0.37E+01 at (21,25,5)
+       Min divergence: -0.20E-05 at (19,30,29)
+       Max VN number :  0.28E-01 at (25,1,27)
+ 
+       Time Step        4   July 15, 2025  09:38:49
+       Step Size:  0.922E-01 s, Total Time:    0.36873 s
+       Pressure Iterations: 4
+       Maximum Velocity Error:  0.47E-01 on Mesh 1 at (30,11,1)
+       Maximum Pressure Error:  0.69E+02 on Mesh 1 at (11,15,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.55E+00 at (21,25,5)
+       Max divergence:  0.81E+01 at (10,21,1)
+       Min divergence: -0.20E-05 at (19,30,29)
+       Max VN number :  0.86E-01 at (21,25,5)
+ 
+       Time Step        5   July 15, 2025  09:38:49
+       Step Size:  0.922E-01 s, Total Time:    0.46091 s
+       Pressure Iterations: 4
+       Maximum Velocity Error:  0.38E-01 on Mesh 1 at (30,19,1)
+       Maximum Pressure Error:  0.81E+03 on Mesh 1 at (10,21,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.87E+00 at (10,22,1)
+       Max divergence:  0.39E+01 at (21,18,1)
+       Min divergence: -0.69E-03 at (8,19,5)
+       Max VN number :  0.50E+00 at (10,21,1)
+ 
+       Time Step        6   July 15, 2025  09:38:49
+       Step Size:  0.922E-01 s, Total Time:    0.55310 s
+       Pressure Iterations: 3
+       Maximum Velocity Error:  0.44E-01 on Mesh 1 at (20,15,1)
+       Maximum Pressure Error:  0.30E+03 on Mesh 1 at (21,21,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.10E+01 at (21,25,5)
+       Max divergence:  0.33E+01 at (10,21,5)
+       Min divergence: -0.54E-02 at (18,24,8)
+       Max VN number :  0.23E+00 at (11,14,1)
+ 
+       Time Step        7   July 15, 2025  09:38:49
+       Step Size:  0.544E-01 s, Total Time:    0.60750 s
+       Pressure Iterations: 3
+       Maximum Velocity Error:  0.29E-01 on Mesh 1 at (20,15,1)
+       Maximum Pressure Error:  0.24E+03 on Mesh 1 at (21,20,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.78E+00 at (20,26,5)
+       Max divergence:  0.40E+01 at (21,18,3)
+       Min divergence: -0.12E-01 at (20,15,2)
+       Max VN number :  0.17E+00 at (21,25,6)
+ 
+       Time Step        8   July 15, 2025  09:38:49
+       Step Size:  0.483E-01 s, Total Time:    0.65575 s
+       Pressure Iterations: 3
+       Maximum Velocity Error:  0.32E-01 on Mesh 1 at (20,15,2)
+       Maximum Pressure Error:  0.38E+03 on Mesh 1 at (21,21,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.85E+00 at (21,25,5)
+       Max divergence:  0.39E+01 at (20,15,3)
+       Min divergence: -0.12E-01 at (14,18,8)
+       Max VN number :  0.24E+00 at (21,25,6)
+ 
+       Time Step        9   July 15, 2025  09:38:49
+       Step Size:  0.415E-01 s, Total Time:    0.69728 s
+       Pressure Iterations: 3
+       Maximum Velocity Error:  0.22E-01 on Mesh 1 at (20,15,2)
+       Maximum Pressure Error:  0.17E+03 on Mesh 1 at (10,19,2)
+       ---------------------------------------------------------------
+       Max CFL number:  0.87E+00 at (20,26,5)
+       Max divergence:  0.32E+01 at (21,16,3)
+       Min divergence: -0.18E+00 at (20,15,4)
+       Max VN number :  0.29E+00 at (21,25,6)
+ 
+       Time Step       10   July 15, 2025  09:38:49
+       Step Size:  0.370E-01 s, Total Time:    0.73431 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.37E-01 on Mesh 1 at (20,16,3)
+       Maximum Pressure Error:  0.14E+03 on Mesh 1 at (21,19,3)
+       ---------------------------------------------------------------
+       Max CFL number:  0.88E+00 at (20,26,6)
+       Max divergence:  0.29E+01 at (20,15,4)
+       Min divergence: -0.90E-01 at (11,26,7)
+       Max VN number :  0.35E+00 at (20,26,6)
+ 
+       Time Step       20   July 15, 2025  09:38:49
+       Step Size:  0.227E-01 s, Total Time:    1.01412 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.41E-01 on Mesh 1 at (18,19,5)
+       Maximum Pressure Error:  0.92E+02 on Mesh 1 at (21,26,11)
+       ---------------------------------------------------------------
+       Max CFL number:  0.93E+00 at (19,26,9)
+       Max divergence:  0.39E+01 at (10,19,6)
+       Min divergence: -0.23E+01 at (11,26,11)
+       Max VN number :  0.30E+00 at (21,18,8)
+ 
+       Time Step       30   July 15, 2025  09:38:49
+       Step Size:  0.181E-01 s, Total Time:    1.21691 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.50E-01 on Mesh 1 at (15,22,5)
+       Maximum Pressure Error:  0.18E+03 on Mesh 1 at (16,26,13)
+       ---------------------------------------------------------------
+       Max CFL number:  0.87E+00 at (10,20,12)
+       Max divergence:  0.48E+01 at (17,26,6)
+       Min divergence: -0.20E+01 at (10,23,13)
+       Max VN number :  0.29E+00 at (18,15,12)
+ 
+       Time Step       40   July 15, 2025  09:38:50
+       Step Size:  0.163E-01 s, Total Time:    1.38722 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.45E-01 on Mesh 1 at (18,22,5)
+       Maximum Pressure Error:  0.15E+03 on Mesh 1 at (16,26,17)
+       ---------------------------------------------------------------
+       Max CFL number:  0.93E+00 at (15,26,13)
+       Max divergence:  0.43E+01 at (21,19,6)
+       Min divergence: -0.20E+01 at (10,20,16)
+       Max VN number :  0.28E+00 at (16,15,16)
+ 
+       Time Step       50   July 15, 2025  09:38:50
+       Step Size:  0.141E-01 s, Total Time:    1.54150 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.12E-01 on Mesh 1 at (16,20,5)
+       Maximum Pressure Error:  0.14E+03 on Mesh 1 at (16,26,21)
+       ---------------------------------------------------------------
+       Max CFL number:  0.88E+00 at (16,27,19)
+       Max divergence:  0.42E+01 at (21,23,6)
+       Min divergence: -0.19E+01 at (10,20,20)
+       Max VN number :  0.25E+00 at (16,26,21)
+ 
+       Time Step       60   July 15, 2025  09:38:50
+       Step Size:  0.141E-01 s, Total Time:    1.68261 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.14E-01 on Mesh 1 at (30,40,30)
+       Maximum Pressure Error:  0.23E+03 on Mesh 1 at (12,17,14)
+       ---------------------------------------------------------------
+       Max CFL number:  0.85E+00 at (12,25,14)
+       Max divergence:  0.46E+01 at (21,18,6)
+       Min divergence: -0.21E+01 at (12,18,11)
+       Max VN number :  0.25E+00 at (16,26,25)
+ 
+       Time Step       70   July 15, 2025  09:38:50
+       Step Size:  0.141E-01 s, Total Time:    1.82371 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.42E-01 on Mesh 1 at (18,17,5)
+       Maximum Pressure Error:  0.20E+03 on Mesh 1 at (12,18,17)
+       ---------------------------------------------------------------
+       Max CFL number:  0.94E+00 at (12,25,16)
+       Max divergence:  0.49E+01 at (10,18,6)
+       Min divergence: -0.27E+01 at (12,18,17)
+       Max VN number :  0.40E+00 at (12,18,16)
+ 
+       Time Step       80   July 15, 2025  09:38:51
+       Step Size:  0.141E-01 s, Total Time:    1.96482 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.33E-01 on Mesh 1 at (13,24,5)
+       Maximum Pressure Error:  0.19E+03 on Mesh 1 at (16,13,30)
+       ---------------------------------------------------------------
+       Max CFL number:  0.88E+00 at (12,18,16)
+       Max divergence:  0.46E+01 at (21,23,6)
+       Min divergence: -0.21E+01 at (19,20,6)
+       Max VN number :  0.35E+00 at (12,18,20)
+ 
+       Time Step       90   July 15, 2025  09:38:51
+       Step Size:  0.141E-01 s, Total Time:    2.10593 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.13E-01 on Mesh 1 at (14,24,5)
+       Maximum Pressure Error:  0.19E+03 on Mesh 1 at (18,18,17)
+       ---------------------------------------------------------------
+       Max CFL number:  0.90E+00 at (13,24,15)
+       Max divergence:  0.50E+01 at (21,18,6)
+       Min divergence: -0.19E+01 at (13,23,13)
+       Max VN number :  0.63E+00 at (18,25,30)
+ 
+       Time Step      100   July 15, 2025  09:38:51
+       Step Size:  0.141E-01 s, Total Time:    2.24704 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.27E-01 on Mesh 1 at (14,18,5)
+       Maximum Pressure Error:  0.32E+03 on Mesh 1 at (14,18,6)
+       ---------------------------------------------------------------
+       Max CFL number:  0.97E+00 at (14,24,18)
+       Max divergence:  0.52E+01 at (21,17,6)
+       Min divergence: -0.21E+01 at (17,23,8)
+       Max VN number :  0.57E+00 at (20,10,30)
+ 
+       Time Step      200   July 15, 2025  09:38:54
+       Step Size:  0.853E-02 s, Total Time:    3.27504 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.16E-01 on Mesh 1 at (30,18,30)
+       Maximum Pressure Error:  0.64E+03 on Mesh 1 at (18,10,30)
+       ---------------------------------------------------------------
+       Max CFL number:  0.83E+00 at (15,21,24)
+       Max divergence:  0.63E+01 at (21,18,6)
+       Min divergence: -0.18E+01 at (10,17,30)
+       Max VN number :  0.57E+00 at (13,2,30)
+ 
+       Time Step      300   July 15, 2025  09:38:57
+       Step Size:  0.908E-02 s, Total Time:    4.19177 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.27E-01 on Mesh 1 at (30,40,30)
+       Maximum Pressure Error:  0.86E+03 on Mesh 1 at (21,25,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.86E+00 at (17,14,30)
+       Max divergence:  0.71E+01 at (21,24,5)
+       Min divergence: -0.20E+01 at (16,18,17)
+       Max VN number :  0.60E+00 at (6,1,14)
+ 
+       Time Step      400   July 15, 2025  09:38:59
+       Step Size:  0.107E-01 s, Total Time:    5.13990 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.30E-01 on Mesh 1 at (30,24,30)
+       Maximum Pressure Error:  0.45E+03 on Mesh 1 at (15,19,25)
+       ---------------------------------------------------------------
+       Max CFL number:  0.88E+00 at (16,7,30)
+       Max divergence:  0.70E+01 at (20,17,6)
+       Min divergence: -0.21E+01 at (18,20,13)
+       Max VN number :  0.64E+00 at (15,6,30)
+ 
+       Time Step      500   July 15, 2025  09:39:02
+       Step Size:  0.101E-01 s, Total Time:    6.14010 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.28E-01 on Mesh 1 at (30,40,21)
+       Maximum Pressure Error:  0.43E+03 on Mesh 1 at (13,20,30)
+       ---------------------------------------------------------------
+       Max CFL number:  0.84E+00 at (17,21,23)
+       Max divergence:  0.58E+01 at (15,15,6)
+       Min divergence: -0.21E+01 at (15,19,19)
+       Max VN number :  0.50E+00 at (30,39,20)
+ 
+       Time Step      600   July 15, 2025  09:39:05
+       Step Size:  0.108E-01 s, Total Time:    7.20953 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.43E-01 on Mesh 1 at (19,25,4)
+       Maximum Pressure Error:  0.89E+03 on Mesh 1 at (19,26,4)
+       ---------------------------------------------------------------
+       Max CFL number:  0.88E+00 at (13,20,26)
+       Max divergence:  0.77E+01 at (20,26,4)
+       Min divergence: -0.15E+01 at (19,18,14)
+       Max VN number :  0.59E+00 at (16,16,30)
+ 
+       Time Step      700   July 15, 2025  09:39:07
+       Step Size:  0.878E-02 s, Total Time:    8.23388 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.22E-01 on Mesh 1 at (30,40,25)
+       Maximum Pressure Error:  0.51E+03 on Mesh 1 at (22,20,30)
+       ---------------------------------------------------------------
+       Max CFL number:  0.93E+00 at (18,20,24)
+       Max divergence:  0.58E+01 at (16,15,6)
+       Min divergence: -0.17E+01 at (18,20,7)
+       Max VN number :  0.50E+00 at (2,35,30)
+ 
+       Time Step      800   July 15, 2025  09:39:10
+       Step Size:  0.106E-01 s, Total Time:    9.27006 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.38E-01 on Mesh 1 at (30,34,30)
+       Maximum Pressure Error:  0.52E+03 on Mesh 1 at (15,19,23)
+       ---------------------------------------------------------------
+       Max CFL number:  0.87E+00 at (15,19,22)
+       Max divergence:  0.59E+01 at (17,15,6)
+       Min divergence: -0.24E+01 at (15,23,17)
+       Max VN number :  0.69E+00 at (21,40,2)
+ 
+       Time Step      900   July 15, 2025  09:39:13
+       Step Size:  0.115E-01 s, Total Time:   10.38729 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.28E-01 on Mesh 1 at (26,40,30)
+       Maximum Pressure Error:  0.28E+03 on Mesh 1 at (15,22,22)
+       ---------------------------------------------------------------
+       Max CFL number:  0.91E+00 at (18,23,18)
+       Max divergence:  0.74E+01 at (10,17,5)
+       Min divergence: -0.25E+01 at (15,22,22)
+       Max VN number :  0.58E+00 at (21,40,4)
+ 
+       Time Step     1000   July 15, 2025  09:39:16
+       Step Size:  0.109E-01 s, Total Time:   11.46613 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.40E-01 on Mesh 1 at (30,32,30)
+       Maximum Pressure Error:  0.30E+03 on Mesh 1 at (20,17,22)
+       ---------------------------------------------------------------
+       Max CFL number:  0.86E+00 at (19,20,22)
+       Max divergence:  0.57E+01 at (10,25,1)
+       Min divergence: -0.21E+01 at (20,17,22)
+       Max VN number :  0.62E+00 at (21,2,30)
+ 
+       Time Step     1100   July 15, 2025  09:39:18
+       Step Size:  0.116E-01 s, Total Time:   12.63555 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.49E-01 on Mesh 1 at (30,28,30)
+       Maximum Pressure Error:  0.41E+03 on Mesh 1 at (10,16,4)
+       ---------------------------------------------------------------
+       Max CFL number:  0.91E+00 at (22,20,19)
+       Max divergence:  0.54E+01 at (21,23,1)
+       Min divergence: -0.18E+01 at (10,23,9)
+       Max VN number :  0.65E+00 at (22,1,19)
+ 
+       Time Step     1200   July 15, 2025  09:39:21
+       Step Size:  0.126E-01 s, Total Time:   13.85867 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.45E-01 on Mesh 1 at (30,31,30)
+       Maximum Pressure Error:  0.31E+03 on Mesh 1 at (11,18,24)
+       ---------------------------------------------------------------
+       Max CFL number:  0.99E+00 at (11,18,23)
+       Max divergence:  0.64E+01 at (10,22,5)
+       Min divergence: -0.19E+01 at (18,20,6)
+       Max VN number :  0.62E+00 at (9,40,2)
+ 
+       Time Step     1300   July 15, 2025  09:39:24
+       Step Size:  0.133E-01 s, Total Time:   15.12909 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.27E-01 on Mesh 1 at (30,29,30)
+       Maximum Pressure Error:  0.24E+03 on Mesh 1 at (24,27,30)
+       ---------------------------------------------------------------
+       Max CFL number:  0.88E+00 at (15,18,24)
+       Max divergence:  0.59E+01 at (10,22,5)
+       Min divergence: -0.19E+01 at (20,20,6)
+       Max VN number :  0.91E+00 at (19,14,1)
+ 
+       Time Step     1400   July 15, 2025  09:39:27
+       Step Size:  0.141E-01 s, Total Time:   16.44042 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.23E-01 on Mesh 1 at (30,31,24)
+       Maximum Pressure Error:  0.22E+03 on Mesh 1 at (12,31,30)
+       ---------------------------------------------------------------
+       Max CFL number:  0.91E+00 at (17,19,22)
+       Max divergence:  0.64E+01 at (10,24,4)
+       Min divergence: -0.21E+01 at (16,23,12)
+       Max VN number :  0.59E+00 at (14,23,30)
+ 
+       Time Step     1500   July 15, 2025  09:39:30
+       Step Size:  0.127E-01 s, Total Time:   17.80590 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.18E-01 on Mesh 1 at (30,35,30)
+       Maximum Pressure Error:  0.22E+03 on Mesh 1 at (10,22,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.90E+00 at (18,25,24)
+       Max divergence:  0.54E+01 at (21,16,6)
+       Min divergence: -0.21E+01 at (15,22,11)
+       Max VN number :  0.57E+00 at (20,13,1)
+ 
+       Time Step     1600   July 15, 2025  09:39:32
+       Step Size:  0.132E-01 s, Total Time:   19.17928 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.18E-01 on Mesh 1 at (30,34,30)
+       Maximum Pressure Error:  0.13E+03 on Mesh 1 at (10,23,3)
+       ---------------------------------------------------------------
+       Max CFL number:  0.76E+00 at (12,17,15)
+       Max divergence:  0.65E+01 at (10,25,5)
+       Min divergence: -0.15E+01 at (12,21,6)
+       Max VN number :  0.73E+00 at (10,40,3)
+ 
+       Time Step     1700   July 15, 2025  09:39:35
+       Step Size:  0.136E-01 s, Total Time:   20.59514 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.14E-01 on Mesh 1 at (14,40,30)
+       Maximum Pressure Error:  0.30E+03 on Mesh 1 at (21,18,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.87E+00 at (15,24,25)
+       Max divergence:  0.64E+01 at (21,17,1)
+       Min divergence: -0.17E+01 at (9,23,12)
+       Max VN number :  0.53E+00 at (10,25,1)
+ 
+       Time Step     1800   July 15, 2025  09:39:38
+       Step Size:  0.127E-01 s, Total Time:   21.90772 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.14E-01 on Mesh 1 at (21,40,30)
+       Maximum Pressure Error:  0.25E+03 on Mesh 1 at (10,19,2)
+       ---------------------------------------------------------------
+       Max CFL number:  0.75E+00 at (8,25,19)
+       Max divergence:  0.68E+01 at (21,18,5)
+       Min divergence: -0.20E+01 at (21,15,9)
+       Max VN number :  0.89E+00 at (19,14,1)
+ 
+       Time Step     1900   July 15, 2025  09:39:41
+       Step Size:  0.137E-01 s, Total Time:   23.22645 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.29E-01 on Mesh 1 at (10,23,1)
+       Maximum Pressure Error:  0.69E+03 on Mesh 1 at (10,23,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.82E+00 at (6,23,25)
+       Max divergence:  0.72E+01 at (10,23,1)
+       Min divergence: -0.24E+01 at (9,24,9)
+       Max VN number :  0.82E+00 at (18,13,1)
+ 
+       Time Step     2000   July 15, 2025  09:39:44
+       Step Size:  0.129E-01 s, Total Time:   24.56797 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.20E-01 on Mesh 1 at (10,25,1)
+       Maximum Pressure Error:  0.26E+03 on Mesh 1 at (10,16,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.90E+00 at (15,17,24)
+       Max divergence:  0.68E+01 at (10,25,1)
+       Min divergence: -0.21E+01 at (15,24,6)
+       Max VN number :  0.55E+00 at (30,18,18)
+ 
+       Time Step     2100   July 15, 2025  09:39:47
+       Step Size:  0.143E-01 s, Total Time:   25.89955 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.33E-01 on Mesh 1 at (30,34,30)
+       Maximum Pressure Error:  0.21E+03 on Mesh 1 at (10,20,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.93E+00 at (12,23,22)
+       Max divergence:  0.74E+01 at (11,26,5)
+       Min divergence: -0.19E+01 at (13,20,6)
+       Max VN number :  0.66E+00 at (18,13,1)
+ 
+       Time Step     2200   July 15, 2025  09:39:50
+       Step Size:  0.137E-01 s, Total Time:   27.26987 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.30E-01 on Mesh 1 at (14,24,5)
+       Maximum Pressure Error:  0.43E+03 on Mesh 1 at (14,24,6)
+       ---------------------------------------------------------------
+       Max CFL number:  0.94E+00 at (11,24,22)
+       Max divergence:  0.74E+01 at (20,18,6)
+       Min divergence: -0.22E+01 at (21,23,9)
+       Max VN number :  0.52E+00 at (17,12,1)
+ 
+       Time Step     2300   July 15, 2025  09:39:52
+       Step Size:  0.134E-01 s, Total Time:   28.61514 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.16E-01 on Mesh 1 at (5,40,21)
+       Maximum Pressure Error:  0.19E+03 on Mesh 1 at (21,17,15)
+       ---------------------------------------------------------------
+       Max CFL number:  0.89E+00 at (21,17,14)
+       Max divergence:  0.69E+01 at (13,26,5)
+       Min divergence: -0.20E+01 at (19,20,6)
+       Max VN number :  0.70E+00 at (10,40,7)
+ 
+       Time Step     2400   July 15, 2025  09:39:55
+       Step Size:  0.137E-01 s, Total Time:   29.96871 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.17E-01 on Mesh 1 at (30,40,20)
+       Maximum Pressure Error:  0.16E+03 on Mesh 1 at (15,34,30)
+       ---------------------------------------------------------------
+       Max CFL number:  0.87E+00 at (13,22,16)
+       Max divergence:  0.66E+01 at (10,24,1)
+       Min divergence: -0.21E+01 at (11,13,1)
+       Max VN number :  0.61E+00 at (10,40,3)
+ 
+       Time Step     2500   July 15, 2025  09:39:58
+       Step Size:  0.152E-01 s, Total Time:   31.35692 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.25E-01 on Mesh 1 at (30,40,21)
+       Maximum Pressure Error:  0.37E+03 on Mesh 1 at (21,21,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.91E+00 at (22,14,18)
+       Max divergence:  0.75E+01 at (10,21,4)
+       Min divergence: -0.23E+01 at (21,20,11)
+       Max VN number :  0.71E+00 at (23,40,2)
+ 
+       Time Step     2600   July 15, 2025  09:40:01
+       Step Size:  0.126E-01 s, Total Time:   32.79201 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.33E-01 on Mesh 1 at (12,15,1)
+       Maximum Pressure Error:  0.13E+04 on Mesh 1 at (12,15,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.83E+00 at (22,23,27)
+       Max divergence:  0.61E+01 at (21,24,4)
+       Min divergence: -0.16E+01 at (13,17,9)
+       Max VN number :  0.53E+00 at (10,40,4)
+ 
+       Time Step     2700   July 15, 2025  09:40:04
+       Step Size:  0.966E-02 s, Total Time:   34.20596 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.14E-01 on Mesh 1 at (18,25,5)
+       Maximum Pressure Error:  0.29E+03 on Mesh 1 at (21,22,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.61E+00 at (20,20,14)
+       Max divergence:  0.83E+01 at (14,25,6)
+       Min divergence: -0.19E+01 at (21,21,10)
+       Max VN number :  0.89E+00 at (21,40,2)
+ 
+       Time Step     2800   July 15, 2025  09:40:07
+       Step Size:  0.127E-01 s, Total Time:   35.54770 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.18E-01 on Mesh 1 at (19,17,5)
+       Maximum Pressure Error:  0.21E+03 on Mesh 1 at (13,34,30)
+       ---------------------------------------------------------------
+       Max CFL number:  0.75E+00 at (18,40,17)
+       Max divergence:  0.68E+01 at (20,22,6)
+       Min divergence: -0.13E+01 at (16,21,6)
+       Max VN number :  0.56E+00 at (11,14,1)
+ 
+       Time Step     2900   July 15, 2025  09:40:10
+       Step Size:  0.131E-01 s, Total Time:   36.99240 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.14E-01 on Mesh 1 at (20,21,1)
+       Maximum Pressure Error:  0.24E+03 on Mesh 1 at (10,16,3)
+       ---------------------------------------------------------------
+       Max CFL number:  0.83E+00 at (15,25,23)
+       Max divergence:  0.64E+01 at (21,22,5)
+       Min divergence: -0.14E+01 at (11,23,9)
+       Max VN number :  0.53E+00 at (11,14,1)
+ 
+       Time Step     3000   July 15, 2025  09:40:13
+       Step Size:  0.136E-01 s, Total Time:   38.42395 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.37E-01 on Mesh 1 at (20,17,5)
+       Maximum Pressure Error:  0.36E+03 on Mesh 1 at (21,17,5)
+       ---------------------------------------------------------------
+       Max CFL number:  0.87E+00 at (13,16,19)
+       Max divergence:  0.64E+01 at (10,23,1)
+       Min divergence: -0.17E+01 at (17,19,7)
+       Max VN number :  0.67E+00 at (10,23,2)
+ 
+       Time Step     3100   July 15, 2025  09:40:15
+       Step Size:  0.146E-01 s, Total Time:   39.83098 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.31E-01 on Mesh 1 at (30,25,30)
+       Maximum Pressure Error:  0.38E+03 on Mesh 1 at (21,24,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.83E+00 at (12,24,15)
+       Max divergence:  0.91E+01 at (13,26,5)
+       Min divergence: -0.17E+01 at (22,40,3)
+       Max VN number :  0.69E+00 at (1,8,11)
+ 
+       Time Step     3200   July 15, 2025  09:40:18
+       Step Size:  0.143E-01 s, Total Time:   41.30449 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.30E-01 on Mesh 1 at (9,40,3)
+       Maximum Pressure Error:  0.26E+03 on Mesh 1 at (10,22,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.89E+00 at (11,23,21)
+       Max divergence:  0.60E+01 at (10,16,5)
+       Min divergence: -0.23E+01 at (10,16,9)
+       Max VN number :  0.93E+00 at (19,13,1)
+ 
+       Time Step     3300   July 15, 2025  09:40:21
+       Step Size:  0.123E-01 s, Total Time:   42.68077 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.13E-01 on Mesh 1 at (9,40,2)
+       Maximum Pressure Error:  0.18E+03 on Mesh 1 at (8,28,30)
+       ---------------------------------------------------------------
+       Max CFL number:  0.79E+00 at (11,40,4)
+       Max divergence:  0.72E+01 at (10,24,4)
+       Min divergence: -0.12E+01 at (19,18,15)
+       Max VN number :  0.77E+00 at (10,40,4)
+ 
+       Time Step     3400   July 15, 2025  09:40:24
+       Step Size:  0.112E-01 s, Total Time:   44.07891 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.20E-01 on Mesh 1 at (18,40,29)
+       Maximum Pressure Error:  0.30E+03 on Mesh 1 at (21,21,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.72E+00 at (21,14,11)
+       Max divergence:  0.59E+01 at (16,26,6)
+       Min divergence: -0.16E+01 at (21,14,11)
+       Max VN number :  0.76E+00 at (10,40,2)
+ 
+       Time Step     3500   July 15, 2025  09:40:27
+       Step Size:  0.142E-01 s, Total Time:   45.43386 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.25E-01 on Mesh 1 at (20,20,5)
+       Maximum Pressure Error:  0.60E+03 on Mesh 1 at (21,20,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.92E+00 at (9,25,21)
+       Max divergence:  0.66E+01 at (11,15,5)
+       Min divergence: -0.17E+01 at (12,17,7)
+       Max VN number :  0.57E+00 at (20,20,6)
+ 
+       Time Step     3600   July 15, 2025  09:40:30
+       Step Size:  0.130E-01 s, Total Time:   46.82937 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.17E-01 on Mesh 1 at (12,25,5)
+       Maximum Pressure Error:  0.36E+03 on Mesh 1 at (10,17,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.77E+00 at (21,14,12)
+       Max divergence:  0.59E+01 at (10,24,5)
+       Min divergence: -0.14E+01 at (16,22,14)
+       Max VN number :  0.89E+00 at (30,20,11)
+ 
+       Time Step     3700   July 15, 2025  09:40:33
+       Step Size:  0.125E-01 s, Total Time:   48.23751 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.19E-01 on Mesh 1 at (19,40,23)
+       Maximum Pressure Error:  0.30E+03 on Mesh 1 at (21,18,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.90E+00 at (10,23,21)
+       Max divergence:  0.60E+01 at (14,26,6)
+       Min divergence: -0.16E+01 at (13,22,6)
+       Max VN number :  0.58E+00 at (11,14,1)
+ 
+       Time Step     3800   July 15, 2025  09:40:35
+       Step Size:  0.109E-01 s, Total Time:   49.57782 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.16E-01 on Mesh 1 at (22,40,4)
+       Maximum Pressure Error:  0.25E+03 on Mesh 1 at (14,40,10)
+       ---------------------------------------------------------------
+       Max CFL number:  0.68E+00 at (13,23,21)
+       Max divergence:  0.64E+01 at (21,16,6)
+       Min divergence: -0.15E+01 at (12,21,21)
+       Max VN number :  0.85E+00 at (9,40,3)
+ 
+       Time Step     3900   July 15, 2025  09:40:38
+       Step Size:  0.146E-01 s, Total Time:   50.92743 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.46E-01 on Mesh 1 at (20,22,2)
+       Maximum Pressure Error:  0.84E+03 on Mesh 1 at (21,22,2)
+       ---------------------------------------------------------------
+       Max CFL number:  0.83E+00 at (30,27,19)
+       Max divergence:  0.94E+01 at (11,22,6)
+       Min divergence: -0.16E+01 at (11,23,15)
+       Max VN number :  0.59E+00 at (26,26,30)
+ 
+       Time Step     4000   July 15, 2025  09:40:41
+       Step Size:  0.141E-01 s, Total Time:   52.36775 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.41E-01 on Mesh 1 at (12,15,4)
+       Maximum Pressure Error:  0.31E+03 on Mesh 1 at (12,15,4)
+       ---------------------------------------------------------------
+       Max CFL number:  0.93E+00 at (21,18,10)
+       Max divergence:  0.74E+01 at (12,15,4)
+       Min divergence: -0.24E+01 at (21,18,10)
+       Max VN number :  0.52E+00 at (29,40,27)
+ 
+       Time Step     4100   July 15, 2025  09:40:44
+       Step Size:  0.119E-01 s, Total Time:   53.68495 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.25E-01 on Mesh 1 at (19,15,4)
+       Maximum Pressure Error:  0.52E+03 on Mesh 1 at (19,15,4)
+       ---------------------------------------------------------------
+       Max CFL number:  0.81E+00 at (22,23,21)
+       Max divergence:  0.66E+01 at (13,25,6)
+       Min divergence: -0.18E+01 at (14,23,10)
+       Max VN number :  0.55E+00 at (23,40,2)
+ 
+       Time Step     4200   July 15, 2025  09:40:47
+       Step Size:  0.137E-01 s, Total Time:   55.00904 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.44E-01 on Mesh 1 at (30,31,30)
+       Maximum Pressure Error:  0.29E+03 on Mesh 1 at (21,20,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.79E+00 at (17,40,19)
+       Max divergence:  0.59E+01 at (21,25,4)
+       Min divergence: -0.19E+01 at (16,22,7)
+       Max VN number :  0.85E+00 at (15,22,6)
+ 
+       Time Step     4300   July 15, 2025  09:40:49
+       Step Size:  0.142E-01 s, Total Time:   56.38993 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.19E-01 on Mesh 1 at (8,40,1)
+       Maximum Pressure Error:  0.51E+03 on Mesh 1 at (20,23,5)
+       ---------------------------------------------------------------
+       Max CFL number:  0.89E+00 at (10,22,12)
+       Max divergence:  0.79E+01 at (21,24,1)
+       Min divergence: -0.18E+01 at (20,21,11)
+       Max VN number :  0.81E+00 at (22,40,2)
+ 
+       Time Step     4400   July 15, 2025  09:40:52
+       Step Size:  0.141E-01 s, Total Time:   57.75085 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.19E-01 on Mesh 1 at (8,40,30)
+       Maximum Pressure Error:  0.62E+03 on Mesh 1 at (21,21,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.89E+00 at (20,23,26)
+       Max divergence:  0.77E+01 at (10,23,2)
+       Min divergence: -0.16E+01 at (15,24,6)
+       Max VN number :  0.71E+00 at (22,40,7)
+ 
+       Time Step     4500   July 15, 2025  09:40:55
+       Step Size:  0.131E-01 s, Total Time:   59.12941 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.14E-01 on Mesh 1 at (9,40,2)
+       Maximum Pressure Error:  0.21E+03 on Mesh 1 at (21,22,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.82E+00 at (11,24,22)
+       Max divergence:  0.59E+01 at (19,26,3)
+       Min divergence: -0.23E+01 at (10,40,6)
+       Max VN number :  0.60E+00 at (1,38,8)
+ 
+       Time Step     4566   July 15, 2025  09:40:57
+       Step Size:  0.115E-01 s, Total Time:   60.00000 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.12E-01 on Mesh 1 at (20,20,1)
+       Maximum Pressure Error:  0.42E+03 on Mesh 1 at (21,20,1)
+       ---------------------------------------------------------------
+       Max CFL number:  0.73E+00 at (8,24,20)
+       Max divergence:  0.65E+01 at (10,23,3)
+       Min divergence: -0.25E+01 at (8,25,14)
+       Max VN number :  0.69E+00 at (19,13,1)
+ 
+
+
+ Time Stepping Wall Clock Time (s):      128.288
+ Total Elapsed Wall Clock Time (s):      129.284
+
+STOP: FDS completed successfully (CHID: sample)
